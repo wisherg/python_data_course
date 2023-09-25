@@ -1,0 +1,211 @@
+# 移动端系统设计与开发
+
+## 课程培养设想
+
+0. 共同学习
+1. 个人项目开发与学院竞赛结合，期末大作业
+2. 探索式学习
+3. 后续课程数据产品开发
+
+## hbuildx的安装
+
+[官网软件链接](https://www.dcloud.io/hbuilderx.html)
+
+下载软件 解压到某个文件夹即可，双击对应图标则可以打开
+
+## uniapp学习
+
+[官网文档链接](https://uniapp.dcloud.net.cn/tutorial/)
+
+[介绍视频](https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/uni-app-video-courses.mp4)
+
+uniapp-vue-js-ts-html-css
+
+[uniapp](https://search.bilibili.com/all?keyword=uniapp)
+
+## 为什么作为初学者而不是基于知识本身的顺序而是通过案例学习
+
+* 前端知识库庞大且日新月异，顺序学习耗时长，且会学很多过时的东西。研究最新的案例会天然过滤掉无用的知识
+* 知识纠缠在一起，前端vue,css,html,后端api接口,数据库一起构建其完整的app,全栈学习必然要一起学。
+* 前端知识浅显易懂
+* chatgpt的强大
+
+## hbuildx的使用
+
+* 插件的安装
+1. 内置与外置浏览器
+
+* 项目新建
+
+1. 通过默认模板创建项目
+2. 通过hell-uni-app模板创建项目
+
+* 项目运行
+
+1. 运行到内置浏览器
+
+* 把老师的md文件放入项目并打开
+
+## 运行
+
+1. 尝试在内置浏览器内运行两个项目
+
+2. 拷贝helloapp中view页面的代码到默认模板的页面中看看实现效果
+
+## 了解项目的目录结构
+
+[目录结构](https://uniapp.dcloud.net.cn/tutorial/project.html)
+
+* 尝试新建和删除一个页面（注意pages.json文件的变化）
+
+* 了解页面的代码结构
+1.uni-app 页面基于 vue 规范。一个页面内，有3个根节点标签 template、script、style，分别是模板组件区、脚本区、样式区。
+
+* hell_uni_app 案例的使用方法：首页导航与pages文件夹源代码的对应
+
+# 页面案例1：hello_uni_app-pages-view页面学习
+
+## 基于chatgpt的问答学习（https://claude.ai/）
+
+### 此代码是一份uniapp案例中pages文件下的页面代码，请总结下对于新手来讲，此案例包含了哪些知识点？
+
+根据这个uniapp页面代码案例,可以总结出以下几点知识点:
+
+1. page-head组件 - 用于设置页面标题。
+
+2. view容器 - uniapp中的视图容器,相当于div。
+
+3. flex布局 - 使用display: flex设置容器为flex布局,然后通过flex-direction设置布局方向。
+
+4. justify-content - 设置主轴对齐方式,如居中、两端对齐等。 
+
+5. align-items - 设置交叉轴对齐方式,如垂直居中等。
+
+6. flex - 设置组件的伸缩比例。
+
+7. flex-wrap - 是否允许换行。
+
+8. 固定宽高 - 通过rpx设置组件固定宽高。
+
+9. 组合布局 - flex允许多层嵌套,进行复杂页面布局。
+
+10. 内联样式 - 通过style属性设置组件样式。
+
+11. 外部样式 - 使用外部样式文件统一维护。
+
+所以,这个案例总体上覆盖了flex布局的各种属性用法,以及组合使用,是一个比较全面的flex布局学习案例。对uniapp以及响应式布局的学习会有帮助。
+
+### 说下此代码包含了flex布局的哪些知识点
+
+从这个uniapp页面的代码来看,它包含了以下flex布局的知识点:
+
+1. flex容器
+
+使用view组件并设置display: flex来定义一个flex容器。
+
+2. flex流向
+
+通过flex-direction属性设置主轴方向,row表示水平方向,column表示垂直方向。
+
+3. 主轴对齐
+
+justify-content属性定义了主轴上的对齐方式,如center居中,space-between两端对齐等。
+
+4. 交叉轴对齐 
+
+align-items属性定义了交叉轴上的对齐方式,如center垂直居中,flex-end垂直底部对齐等。
+
+5. 弹性
+
+flex属性定义子元素的弹性伸缩比例。
+
+6. 换行
+
+flex-wrap属性设置是否允许换行。
+
+7. 嵌套
+
+flex容器可以多层嵌套,实现复杂布局。
+
+8. 排列顺序
+
+通过调整代码顺序来改变排列顺序。
+
+所以,我们看到这个示例使用了flex的各种属性,涵盖了其中比较重要的知识点,包括流向、对齐、弹性、换行等,是一个很好的学习案例。
+
+### 此代码中包含哪些与css有关的知识点
+
+从代码来看,主要包含了以下与CSS相关的知识点:
+
+1. flex布局
+
+- display: flex 定义为flex布局
+- flex-direction 设置主轴方向为行或列
+- justify-content 定义主轴对齐方式  
+- align-items 定义交叉轴对齐方式
+
+2. 大小尺寸
+
+- width/height 设置组件大小
+- rpx响应式尺寸单位
+
+3. 样式
+
+- background-color 设置背景色
+- color 设置文本颜色  
+- text-align 设置文本对齐
+- font-size 设置字体大小
+
+4. 边距
+
+- margin 设置外边距
+- padding 设置内边距
+
+5. 盒模型
+
+- border 设置边框
+
+6. 样式引用
+
+- 行内样式style属性
+- 外部样式文件引用
+
+7. CSS规则特性
+
+- 继承
+- 层叠
+- 优先级
+
+所以,这个示例代码覆盖了响应式布局、样式设置、选择器、盒模型、样式优先级等与CSS相关的主要知识点,是初学者练习Flex和CSS的好案例。
+
+## css修饰的调用方式   
+
+[官网css教程](https://uniapp.dcloud.net.cn/tutorial/syntax-css.html)
+
+## Flex 布局
+
+[flex布局博文](https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+
+## 轴线
+
+1. 请修改默认模板中的代码实现和helloapp一样的横向布局以及颜色
+2. 修改布局方式实现纵向布局
+3，让纵向布局下的大小与原案例一致
+
+## css的盒子模型在text的使用
+
+[盒子模型](https://blog.csdn.net/weixin_44992737/article/details/125217906)
+
+1.实现helloapp案例中的文字格式展示
+
+## flex布局的各种形式
+
+1.了解“自动宽度” 的意义与实现原理
+
+2. 平均分布
+
+3. 自动占满
+
+4. 垂直居中
+
+5. 布局组合
